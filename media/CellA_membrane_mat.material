@@ -1,0 +1,43 @@
+// CellA_membrane_mat genrated by blender2ogre 0.6.0
+
+material CellA_membrane_mat 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass CellA_membrane_mat
+        {
+            scene_blend alpha_blend
+            depth_write off
+
+            texture_unit
+            {
+                colour_op_ex source1 src_manual src_current 0.6400000190734865 0.6400000190734865 0.6400000190734865
+                alpha_op_ex source1 src_manual src_current 0.6
+            }
+            //ambient 0.800000011920929 0.800000011920929 0.800000011920929 0.7009173631668091
+            //diffuse 0.6400000190734865 0.6400000190734865 0.6400000190734865 0.7009173631668091
+            //specular 0.5 0.5 0.5 0.7009173631668091 12.5
+            //emissive 0.0 0.0 0.0 0.7009173631668091
+
+            //alpha_to_coverage off
+            //colour_write on
+            //cull_hardware clockwise
+            //depth_check on
+            //depth_func less_equal
+            //depth_write on
+            //illumination_stage 
+            //light_clip_planes off
+            //light_scissor off
+            //lighting on
+            //normalise_normals off
+            //polygon_mode solid
+            //scene_blend one zero
+            //scene_blend_op add
+            //shading gouraud
+            //transparent_sorting on
+
+        }
+    }
+}

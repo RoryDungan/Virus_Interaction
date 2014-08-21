@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="TaharezLook/FrameWindow" name="Sidebar" >
+        <Property name="Area" value="{{0,0},{0,0},{0,320},{0.3,0}}" />
+        <Property name="MinSize" value="{{0.1,0},{1,0}}" />
+        <Property name="FrameEnabled" value="False" />
+        <Property name="RollUpEnabled" value="False" />
+        <Property name="SizingEnabled" value="False" />
+        <Property name="TitlebarEnabled" value="False" />
+        <Property name="DragMovingEnabled" value="False" />
+        <Property name="CloseButtonEnabled" value="False" />
+        <AutoWindow namePath="__auto_titlebar__" >
+            <Property name="DraggingEnabled" value="False" />
+        </AutoWindow>
+        <Window type="TaharezLook/GroupBox" name="EnvGroupBox" >
+            <Property name="Area" value="{{0,12},{0,9},{0.3,209},{0.3,49}}" />
+            <Property name="Text" value="Environment" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/Label" name="Label" >
+                <Property name="Area" value="{{0,10},{0,5},{0,155},{0,37}}" />
+                <Property name="Text" value="Temperature (C)" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="RightAligned" />
+            </Window>
+            <Window type="TaharezLook/Spinner" name="TempSpinner" >
+                <Property name="Area" value="{{0,165},{0,5},{0,270},{0,37}}" />
+                <Property name="Text" value="30" />
+                <Property name="CurrentValue" value="30" />
+                <Property name="TextInputMode" value="FloatingPoint" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="30" />
+                    <Property name="ValidationString" value="-?\d*\.?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="False" />
+                    <Property name="MouseAutoRepeatEnabled" value="True" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="False" />
+                    <Property name="MouseAutoRepeatEnabled" value="True" />
+                </AutoWindow>
+            </Window>
+            <Window type="TaharezLook/Label" name="Label2" >
+                <Property name="Area" value="{{0,10},{0,50},{0,155},{0,82}}" />
+                <Property name="Text" value="pH" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="RightAligned" />
+            </Window>
+            <Window type="TaharezLook/Spinner" name="PhSpinner" >
+                <Property name="Area" value="{{0,165},{0,50},{0,270},{0,82}}" />
+                <Property name="Text" value="7.365" />
+                <Property name="StepSize" value="0.1" />
+                <Property name="CurrentValue" value="7.365" />
+                <Property name="TextInputMode" value="FloatingPoint" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="7.365" />
+                    <Property name="ValidationString" value="-?\d*\.?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="False" />
+                    <Property name="MouseAutoRepeatEnabled" value="True" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="False" />
+                    <Property name="MouseAutoRepeatEnabled" value="True" />
+                </AutoWindow>
+            </Window>
+            <Window type="TaharezLook/Label" name="Label3" >
+                <Property name="Area" value="{{0,10},{0,95},{0,155},{0,127}}" />
+                <Property name="Text" value="A Cells" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="RightAligned" />
+            </Window>
+            <Window type="TaharezLook/Label" name="Label4" >
+                <Property name="Area" value="{{0,10},{0,140},{0,155},{0,172}}" />
+                <Property name="Text" value="B Cells" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="RightAligned" />
+            </Window>
+            <Window type="TaharezLook/Label" name="Label5" >
+                <Property name="Area" value="{{0,10},{0,185},{0,155},{0,217}}" />
+                <Property name="Text" value="Infected A Cells" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="RightAligned" />
+            </Window>
+            <Window type="TaharezLook/Spinner" name="ACellsSpinner" >
+                <Property name="Area" value="{{0,165},{0,95},{0,270},{0,127}}" />
+                <Property name="MinimumValue" value="0" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="0" />
+                    <Property name="Text" value="8" />
+                    <Property name="ValidationString" value="-?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="False" />
+                    <Property name="MouseAutoRepeatEnabled" value="True" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="False" />
+                    <Property name="MouseAutoRepeatEnabled" value="True" />
+                </AutoWindow>
+            </Window>
+            <Window type="TaharezLook/Spinner" name="BCellsSpinner" >
+                <Property name="Area" value="{{0,165},{0,140},{0,270},{0,172}}" />
+                <Property name="MinimumValue" value="0" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="0" />
+                    <Property name="Text" value="4" />
+                    <Property name="ValidationString" value="-?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="False" />
+                    <Property name="MouseAutoRepeatEnabled" value="True" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="False" />
+                    <Property name="MouseAutoRepeatEnabled" value="True" />
+                </AutoWindow>
+            </Window>
+            <Window type="TaharezLook/Spinner" name="ICellsSpinner" >
+                <Property name="Area" value="{{0,165},{0,185},{0,270},{0,217}}" />
+                <Property name="MinimumValue" value="0" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Text" value="0" />
+                    <Property name="Text" value="2" />
+                    <Property name="ValidationString" value="-?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="WantsMultiClickEvents" value="False" />
+                    <Property name="MouseAutoRepeatEnabled" value="True" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="WantsMultiClickEvents" value="False" />
+                    <Property name="MouseAutoRepeatEnabled" value="True" />
+                </AutoWindow>
+            </Window>
+        </Window>
+        <Window type="TaharezLook/Button" name="QuitButton" >
+            <Property name="Area" value="{{0,165},{1,-45},{0,305},{1,-13}}" />
+            <Property name="Text" value="Quit" />
+        </Window>
+        <Window type="TaharezLook/Button" name="ResetButton" >
+            <Property name="Area" value="{{0,10},{1,-45},{0,150},{1,-13}}" />
+            <Property name="Text" value="Reset" />
+        </Window>
+        <Window type="TaharezLook/GroupBox" name="InfoGroupBox" >
+            <Property name="Area" value="{{0,10},{0,280},{0.3,209},{0.3,349}}" />
+            <Property name="Text" value="Info" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Window type="TaharezLook/Label" name="Label" >
+                <Property name="Area" value="{{0,10},{0,5},{1,-6},{1,5}}" />
+                <Property name="Text" value="Press WASD to move the viewport.\n\nClick on a life form to learn more about it." />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="WordWrapLeftAligned" />
+                <Property name="VertFormatting" value="TopAligned" />
+            </Window>
+        </Window>
+        <Window type="TaharezLook/Label" name="InfoLabel" >
+            <Property name="Area" value="{{0,10},{0,635},{0,305},{0,667}}" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

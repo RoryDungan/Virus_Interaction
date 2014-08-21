@@ -1,0 +1,21 @@
+// CellB_membrane_mat genrated by blender2ogre 0.6.0
+
+material CellB_membrane_mat 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass CellB_membrane_mat
+        {
+            scene_blend alpha_blend
+            depth_write off
+
+            texture_unit
+            {
+                colour_op_ex source1 src_manual src_current 0.6400000190734865 0.6400000190734865 0.6400000190734865
+                alpha_op_ex source1 src_manual src_current 0.6
+            }
+        }
+    }
+}
